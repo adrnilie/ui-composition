@@ -1,20 +1,20 @@
 import { Link, BrowserRouter } from "react-router-dom";
 import { App } from "./App";
 
-type VisitorBookingProps = {
+type FleetManagementProps = {
   basename: string;
 };
 
-export function VisitorBooking(props: VisitorBookingProps) {
+export function FleetManagement(props: FleetManagementProps) {
   return (
     <BrowserRouter basename={props.basename}>
-      <h1>app-visitors home page</h1>
+      <h1>app-fleet home page</h1>
       <div>
         <li>
-          <Link to="/">Overview</Link>
+          <Link to="/">My products</Link>
         </li>
         <li>
-          <Link to="/new-booking">New Booking</Link>
+          <Link to="/my-fleet">My Fleet</Link>
         </li>
       </div>
       <App />

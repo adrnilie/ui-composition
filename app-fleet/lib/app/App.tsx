@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import { Overview, NewBooking } from "./pages";
 import { Button } from "app-web-comp";
 
 export function App() {
@@ -10,13 +9,13 @@ export function App() {
   return (
     <>
       <Button
-        variant="primary"
+        variant="default"
         onClick={handleClick}
         onButtonClicked={(e) => console.log(e)}
       />
       <Routes>
-        <Route path="/" element={<Overview />} />
-        <Route path="/new-booking" element={<NewBooking />} />
+        <Route path="/" element={<h1>app-fleet my-products</h1>} />
+        <Route path="/my-fleet" element={<h1>app-fleet my-fleet</h1>} />
       </Routes>
     </>
   );
